@@ -1,0 +1,215 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"> <!-- displays site properly based on user's device -->
+
+  <link rel="icon" type="image/png" sizes="32x32" href="./images/favicon-32x32.png">
+  
+  <title>Frontend Mentor | NFT preview card component</title>
+
+  <!-- Feel free to remove these styles or customise in your own stylesheet 👍 -->
+  <style>
+    @import url('https://fonts.google.com/specimen/Outfit');
+    body{
+      font-family: 'Outfit', sans-serif;
+      background-color: hsl(217, 54%, 11%);
+    }
+
+    ul{
+      list-style: none;
+    }
+    li{
+      display: flexbox;
+      align-items: center;
+      align-content: center;
+      color: #fff;
+    }
+    .attribution { font-size: 11px; text-align: center; }
+    .attribution a { color: hsl(228, 45%, 44%); }
+
+    .container-content{
+      width: 100%;
+      height: 100vh;
+      padding: 20px;
+      display: flex;
+      align-items: center;
+      align-content: center;
+    }
+
+    .card-content{
+      background-color: hsl(216, 50%, 16%);
+      width: auto;
+      height: auto;
+      border-radius: 25px;
+      margin: 30px;
+    }
+
+    .content{
+      width: auto;
+      height: auto;
+      margin: 30px;
+      color: #fff;
+    }
+
+    .content img{
+      width: 100%;
+      height: auto;
+      margin-top: 20px;
+      border-radius: 25px;
+    }
+    .content h2:hover{
+      color: hsl(178, 100%, 50%);
+      cursor: pointer;
+    }
+
+    .info-cart{
+      display: flex;
+    }
+    .info-cart img{
+      width: 20px;
+      height: 20px;
+    }
+
+    .user-info{
+      margin: 5px;
+      padding: 10px;
+    }
+    .user-info img{
+      width: 50px;
+      height: 50px;
+    }
+
+    .name-user:hover{
+      color:hsl(178, 100%, 50%);
+      cursor: pointer;
+    }
+
+    .content-img{
+      position: relative;
+      width: 100%;
+      height: auto;
+    }
+
+    .exp-img{
+      position: absolute;
+      left: 0;
+      top: 20px;
+      width: 100%;
+      height: 93%;
+      background-color: rgba(0, 0, 0, 0.6);
+      border-radius: 25px;
+      display: flex;
+      align-items: center;
+      align-content: center;
+      opacity: 0;
+      z-index: 999;
+    }
+    .exp-img img{
+      width: 30%;
+      height: auto;
+      margin-left: auto;
+      margin-right: auto;
+    }
+    
+    .exp-img:hover{
+      background-color: rgba(0, 0, 0, 0.3);
+      opacity: 1;
+    }
+    @media only screen and (min-width: 768px) {
+
+      .card-content{
+        margin-left: auto;
+        margin-right: auto;
+        width: 20%;
+        height: auto;
+      }
+
+      .content{
+      width: auto;
+      height: auto;
+      margin: 30px;
+      color: #fff;
+    }
+      .content img{
+      width: 100%;
+      height: auto;
+      border-radius: 25px;
+    }
+
+    .info-cart img{
+      width: 20px;
+      height: 20px;
+    }
+
+    .user-info img{
+      width: 50px;
+      height: 50px;
+    }
+
+    .exp-img{
+      position: absolute;
+      left: 0;
+      top: 20px;
+      width: 100%;
+      height: 93%;
+      background-color: rgba(0, 0, 0, 0.6);
+      border-radius: 25px;
+      display: flex;
+      align-items: center;
+      align-content: center;
+      z-index: 999;
+      cursor: pointer;
+    }
+    .exp-img img{
+      width: 30%;
+      height: auto;
+      margin-left: auto;
+      margin-right: auto;
+    }
+
+    
+    }
+  </style>
+</head>
+<body>
+
+  <div class="container-content">
+    <div class="card-content">
+      <div class="content">
+        <div class="content-img">
+          <img src="images/image-equilibrium.jpg" alt="">
+          <div class="exp-img">
+            <img src="images/icon-view.svg" alt="">
+          </div>
+        </div>
+        <h2>EQUILIBRIUM #3429</h2>
+        <p style="color: hsl(215, 51%, 70%)">Our Equilibrium collection promotes balance and calm.</p>
+        <div class="info-cart">
+          <ul>
+            <li style="color: hsl(178, 100%, 50%);"><img src="images/icon-ethereum.svg" alt=""> 0.041ETH</li>
+          </ul>
+          <span></span>
+          <ul>
+            <li style="color: hsl(215, 51%, 70%);"><img src="images/icon-clock.svg" alt=""> 3 days left</li>
+          </ul>
+        </div>
+        <hr>
+        <div class="user-info">
+          <ul>
+            <li>
+              <img src="images/image-avatar.png" alt=""> <f style="color: hsl(215, 51%, 70%) ;">Creation of</f>  <ff class="name-user">Jules Wyvern</ff> 
+            </li>
+          </ul>
+        </div>
+      </div>
+    </div>
+  </div>
+  
+
+  <div class="attribution">
+    Challenge by <a href="https://www.frontendmentor.io?ref=challenge" target="_blank">Frontend Mentor</a>. 
+    Coded by <a href="#">Martin</a>.
+  </div>
+</body>
+</html>
