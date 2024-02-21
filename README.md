@@ -1,5 +1,7 @@
 #NFT preview card component
 
+![Design preview for the Time tracking dashboard](./design/desktop-preview.jpg)
+
 ## Welcome! 👋
 
 **NTF Preview card component.**
